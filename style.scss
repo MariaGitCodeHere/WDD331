@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet');
+
+@import 'partials/variables';
+@import 'partials/pages-styles';
+@import 'partials/pages-positioning';
+@import 'partials/mixins';
+
+
+
+/* BASE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("assets/wdd331-1.jpeg");
+  background-size: 100% auto;
+  padding: 20px;
+}
+
+.page-wrapper {
+  width: 20em;
+  margin: 0 auto;
+}
+
+
+
+
+/* SECTION - header */
+
+h1 {
+  font-family: $heading-font;
+  color: $paper3-color;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: $book-font;
+  color: $paper1-color;
+  font-size: 1.4em;
+  letter-spacing: .04em;
+  padding-top: .1em;
+}
+
+.summary {
+	font-family: $paper-font;
+	color: $paper1-color;
+	font-size: .8em;
+	letter-spacing: .05em;
+	width: 20em;
+	padding-top: .5em;
+  line-height: 1.5em;
+  
+	a {
+		color: $accent4-color;
+	}
+}
+
+
+
+/* DIV - main */
+// look to the pages-positioning and pages-style
+
+
+
+
+/* ASIDE - footer */
+
+// text on the table
+footer {
+  position: absolute;
+  bottom: -79em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+
+  a {
+    font-family: $table-font;
+    font-size: 1.1em;
+    // changed from background color of paper-1
+    color: $accent3-color;
+    background: linear-gradient(90deg, $accent3-color, $accent4-color, $paper1-color, $accent4-color, $accent3-color);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    // end of text edits
+    margin-right: .3em;
+    text-decoration: none;
+
+    &:hover {
+      color: $paper1-color;
+    }
+  }
+}
+
+// plant
+.extra1 {
+  position: fixed;
+  bottom: 0;
+  right: 0em;
+  background-image: url(assets/wdd331-2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 25em;
+  min-width: 17em;
+  z-index: -1;
+}
+
+
+@import 'partials/large-screen';

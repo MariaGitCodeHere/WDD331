@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet');
+/* dark */
+/* beige */
+/* red book cover */
+/* green */
+/* gold */
+/* gold on red */
+/* red (Andrea added) */
+/* light */
+/* medium */
+/* dark */
+/* dark */
+/* beige */
+/* red book cover */
+/* green */
+/* gold */
+/* gold on red */
+/* red (Andrea added) */
+/* light */
+/* medium */
+/* dark */
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.design-selection,
+.design-archives {
+  box-shadow: 1px 1px 3.5px #161514;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  height: 375px;
+  width: 275px;
+  margin-top: 6em;
+}
+
+.design-selection,
+.design-archives {
+  height: 375px;
+  width: 275px;
+}
+
+.preamble,
+.participation,
+.benefits {
+  background-image: radial-gradient(#e5d7b2, #e5d7b2, #e3c071);
+}
+
+.explanation,
+.requirements {
+  background-color: #e5d7b2;
+  background-image: none;
+}
+
+.design-archives {
+  background-image: url("../assets/wdd331-3.jpeg");
+  background-size: 100% 100%;
+}
+
+#design-selection {
+  background-color: #8c1e1e;
+}
+
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  padding-bottom: 10px;
+  font-size: 0.9em;
+  font-family: "Playfair Display", serif;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.65em;
+}
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+  font-size: 0.75em;
+  padding-bottom: 0.4em;
+  font-family: "EB Garamond", serif;
+  max-width: 99%;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 1em;
+  letter-spacing: 0.65px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.preamble a,
+.explanation a,
+.participation a,
+.benefits a,
+.requirements a {
+  text-decoration: none;
+  color: #02500a;
+  font-weight: 600;
+}
+.preamble a:hover,
+.explanation a:hover,
+.participation a:hover,
+.benefits a:hover,
+.requirements a:hover {
+  color: #443e3e;
+}
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  background-image: url("../assets/red.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.design-archives h3,
+.zen-resources h3 {
+  padding-bottom: 10px;
+  font-size: 0.9em;
+  font-family: "Playfair Display", serif;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.65em;
+}
+.design-archives li,
+.zen-resources li {
+  font-size: 0.75em;
+  padding-bottom: 0.4em;
+  font-family: "EB Garamond", serif;
+  max-width: 99%;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 1em;
+  letter-spacing: 0.65px;
+  line-height: 1.1em;
+}
+.design-archives a,
+.zen-resources a {
+  text-decoration: none;
+  color: #02500a;
+  font-weight: 600;
+}
+.design-archives a:hover,
+.zen-resources a:hover {
+  color: #443e3e;
+}
+.design-archives h3,
+.zen-resources h3 {
+  background-image: url("../assets/red.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.design-archives a,
+.zen-resources a {
+  text-decoration: none;
+  color: #02500a;
+  font-weight: 600;
+}
+.design-archives a:hover,
+.zen-resources a:hover {
+  color: #443e3e;
+}
+
+.design-selection a {
+  color: #eaa606;
+  text-decoration: none;
+  text-align: start;
+}
+.design-selection a:hover {
+  color: #f7edce;
+}
+.design-selection h3 {
+  color: #e5d7b2;
+  margin-bottom: 0.8em;
+}
+.design-selection h3 {
+  padding-bottom: 10px;
+  font-size: 0.9em;
+  font-family: "Playfair Display", serif;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.65em;
+}
+.design-selection li {
+  font-size: 0.75em;
+  padding-bottom: 0.4em;
+  font-family: "EB Garamond", serif;
+  max-width: 99%;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 1em;
+  letter-spacing: 0.65px;
+}
+
+.preamble:hover,
+.explanation:hover,
+.benefits:hover {
+  transform: scale(1.5, 1.5);
+  overflow: visible;
+  display: table;
+  z-index: 10;
+  transition: all 1s;
+}
+
+.participation,
+.design-selection,
+.requirements {
+  margin-left: 2em;
+}
+.participation:hover,
+.design-selection:hover,
+.requirements:hover {
+  transform: scale(1.5, 1.5);
+  overflow: visible;
+  display: table;
+  z-index: 10;
+  transition: all 1s;
+}
+
+.preamble {
+  margin-left: 3em;
+}
+
+.participation {
+  transform: rotate(15deg);
+  margin-top: -1em;
+  position: relative;
+}
+
+.explanation {
+  transform: rotate(30deg);
+  margin-top: -3em;
+  margin-left: 5.5em;
+}
+
+.benefits {
+  position: absolute;
+  margin-top: -15em;
+  margin-left: 4em;
+  transform: rotate(13deg);
+}
+.benefits h3 {
+  text-align: right;
+}
+
+.requirements {
+  position: absolute;
+  margin-top: -12.8em;
+  margin-left: -0.8em;
+  transform: rotate(-4deg);
+}
+
+.sidebar {
+  position: relative;
+  margin-bottom: 10em;
+}
+.sidebar li {
+  list-style: none;
+}
+
+.design-selection {
+  position: relative;
+  margin-top: 17em;
+  margin-left: 1em;
+}
+
+.design-archives {
+  position: absolute;
+  top: 5em;
+  left: 7em;
+  transform: rotate(15deg);
+}
+
+.zen-resources {
+  position: absolute;
+  top: 12em;
+  left: 8.5em;
+  transform: rotate(15deg);
+}
+
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("assets/wdd331-1.jpeg");
+  background-size: 100% auto;
+  padding: 20px;
+}
+
+.page-wrapper {
+  width: 20em;
+  margin: 0 auto;
+}
+
+/* SECTION - header */
+h1 {
+  font-family: "Alex Brush", cursive;
+  color: #bca05e;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: "EB Garamond", serif;
+  color: #e5d7b2;
+  font-size: 1.4em;
+  letter-spacing: 0.04em;
+  padding-top: 0.1em;
+}
+
+.summary {
+  font-family: "Playfair Display", serif;
+  color: #e5d7b2;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  width: 20em;
+  padding-top: 0.5em;
+  line-height: 1.5em;
+}
+.summary a {
+  color: #eaa606;
+}
+
+/* DIV - main */
+/* ASIDE - footer */
+footer {
+  position: absolute;
+  bottom: -79em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+}
+footer a {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 1.1em;
+  color: #d19405;
+  background: linear-gradient(90deg, #d19405, #eaa606, #e5d7b2, #eaa606, #d19405);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-right: 0.3em;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #e5d7b2;
+}
+
+.extra1 {
+  position: fixed;
+  bottom: 0;
+  right: 0em;
+  background-image: url(assets/wdd331-2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 25em;
+  min-width: 17em;
+  z-index: -1;
+}
+
+@media all and (min-width: 60em) {
+  .preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    height: calc(375px * 1.5);
+    width: calc(275px * 1.5);
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .page-wrapper {
+    width: 100%;
+  }
+
+  .intro, .main, .sidebar {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 9em 9em 9em 1fr;
+    grid-template-rows: 5.5em 5.5em 35em 35em 5.5em;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .summary {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .summary p:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 3.3em;
+    color: transparent;
+    background-image: url("../assets/type.svg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    height: 8em;
+    width: 20em;
+    z-index: 5;
+  }
+  .summary p:nth-child(2) a {
+    color: #d19405;
+  }
+  .summary p:nth-child(2) a:hover {
+    color: #e3c071;
+  }
+  .summary a {
+    position: absolute;
+    left: 9.5em;
+    top: 2.598em;
+    transform: rotate(4deg);
+    letter-spacing: 1.05px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .summary a:nth-child(2) {
+    left: 15.3em;
+    top: 2.56em;
+    transform: rotate(353deg);
+  }
+
+  .preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    justify-self: center;
+    position: relative;
+  }
+
+  .requirements {
+    margin-top: 2em;
+    margin-left: 0;
+  }
+
+  .benefits {
+    margin-left: 7.5em;
+    margin-top: 3.3em;
+    text-align: right;
+  }
+
+  .participation {
+    top: -0.5em;
+  }
+
+  .explanation {
+    top: -0.5em;
+    left: -2.5em;
+  }
+
+  .preamble {
+    top: -4em;
+    left: -1em;
+  }
+
+  footer {
+    grid-row: 5/6;
+    grid-column: 4/5;
+    position: relative;
+    align-self: end;
+    margin-left: 6em;
+    padding: 0.7em 0 1.1em 0.7em;
+    width: 100%;
+    background-color: none;
+    z-index: 5;
+    bottom: 0;
+  }
+
+  .sidebar .wrapper {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    align-self: end;
+    position: relative;
+    margin: 0 0 0 2em;
+  }
+
+  .design-selection {
+    transform: rotate(352deg);
+  }
+
+  .design-archives {
+    top: 21em;
+    left: 10em;
+  }
+
+  .zen-resources {
+    top: 27em;
+    left: 11em;
+  }
+
+  .extra1 {
+    height: 45em;
+    min-width: 30em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

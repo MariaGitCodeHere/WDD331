@@ -1,0 +1,90 @@
+ // #2 - main part positioning (div)
+ 
+ .preamble,
+.explanation,
+.benefits {
+  @include scaling-pages;
+ }
+ 
+.participation,
+.design-selection,
+.requirements {
+  margin-left: 2em;
+  @include scaling-pages;
+}
+
+ .preamble {
+  margin-left: 3em;
+}
+
+ .participation {
+  transform: rotate(15deg);
+  margin-top: -1em;
+  position: relative;
+}
+
+.explanation {
+  transform: rotate(30deg);
+  margin-top: -3em;
+  margin-left: 5.5em;
+}
+
+.explanation {
+  // @include scaling-pages;
+}
+.participation {
+  // @include scaling-pages;
+}
+.benefits {
+  // @include scaling-pages;
+  position: absolute;
+	margin-top: -15em;
+	margin-left: 4em;
+	transform: rotate(13deg);
+	
+  h3 {
+		text-align: right;
+  }
+}
+
+.requirements {
+  position: absolute;
+  margin-top: -12.8em;
+  margin-left: -.8em;
+  transform: rotate(-4deg);
+}
+
+
+
+
+
+// #3 - footer positioning (aside) 
+
+.sidebar {
+	position: relative;
+	margin-bottom: 10em;
+  
+	li {
+		list-style: none;
+	}
+}
+
+.design-selection {
+	position: relative;
+  margin-top: 17em;
+  margin-left: 1em;
+}
+
+.design-archives {
+  position: absolute;
+  top: 5em;
+  left: 7em;
+  transform: rotate(15deg);
+}
+
+.zen-resources {
+  position: absolute;
+  top: 12em;
+  left: 8.5em;
+  transform: rotate(15deg);
+}

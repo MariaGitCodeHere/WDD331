@@ -1,0 +1,156 @@
+ // PAGES
+
+ @mixin page {
+  box-shadow: 1px 1px 3.5px $primary-color;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+ @mixin page-big {
+  height: 375px;
+  width: 275px;
+  margin-top: 6em;
+  
+ }
+ @mixin page-small {
+  height: 375px;
+  width: 275px;
+}
+
+
+// BASIC TEXT STYLES
+
+@mixin page-heading {
+  padding-bottom: 10px;
+  font-size: .9em;
+  font-family: 'Playfair Display', serif;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.65em;
+}
+
+@mixin page-text {
+  font-size: .75em;
+  padding-bottom: .4em;
+  font-family: 'EB Garamond', serif;
+  max-width: 99%;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 1em;
+  letter-spacing: .65px;
+}
+
+@mixin page-style {
+  h3 {
+    @include page-heading;
+  }
+  p {
+    @include page-text;
+    text-align: justify;
+    line-height: 1.6em;
+   }
+   @include links-on-pages;
+}
+
+@mixin page-style-list {
+  h3 {
+    @include page-heading;
+  }
+  li {
+    @include page-text;
+    line-height: 1.1em;
+   }
+   @include links-on-pages;
+}
+
+
+// HEADING STYLES
+
+@mixin page-heading-red {
+  h3 {
+    background-image: url("../assets/red.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@mixin page-heading-beige {
+  h3{
+    color: $paper1-color;
+    margin-bottom: .8em;
+  }
+}
+
+
+// LINK STYLES
+
+@mixin gold-letters-on-red {
+  a {
+    color: $accent4-color;
+    text-decoration: none;
+    text-align: start;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+@mixin gold-letters-on-green {
+  a {
+    color: $accent3-color;
+
+    &:hover {
+      color: $paper2-color;
+    }
+  }
+}
+
+@mixin links-on-pages {
+  a {
+    text-decoration: none;
+    color: $accent2-color;
+    font-weight: 600;
+
+    &:hover {
+      color: $accent5-color;
+    }
+  }
+}
+
+
+// PAGE COVERS
+
+@mixin page-paper {
+  background-image: url("../assets/wdd331-3.jpeg");
+  background-size: 100% 100%;
+}
+@mixin page-gradient {
+  background-image: radial-gradient($paper1-color, $paper1-color, $paper2-color);
+}
+@mixin page-beige {
+  background-color: $paper1-color;
+  background-image: none;
+}
+@mixin page-red {
+  background-color: $accent1-color;
+}
+
+
+
+// SCALING
+
+@mixin scaling-pages {
+  &:hover {
+    // transform: translate(10%, -70%) scale(1.2, 1.2);
+    transform: scale(1.5, 1.5);
+	  overflow: visible;
+	  display: table;
+	  z-index: 10;
+    transition: all 1s;
+  }
+}

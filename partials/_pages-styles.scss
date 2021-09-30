@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'mixins';
+
+// page size and style
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.design-selection,
+.design-archives {
+  @include page;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  @include page-big;
+}
+.design-selection,
+.design-archives {
+  @include page-small;
+}
+
+
+.preamble,
+.participation,
+.benefits {
+  @include page-gradient;
+}
+.explanation,
+.requirements {
+  @include page-beige;
+}
+.design-archives {
+  @include page-paper;
+}
+#design-selection {
+  @include page-red;
+}
+
+
+// text style
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  @include page-style;
+  @include page-heading-red;
+}
+
+.design-archives,
+.zen-resources {
+  @include page-style-list;
+  @include page-heading-red;
+  @include links-on-pages;
+}
+
+.design-selection {
+  @include gold-letters-on-red;
+  @include page-heading-beige; 
+  h3 {
+    @include page-heading;
+  }
+  li {
+    @include page-text;
+  }
+}
